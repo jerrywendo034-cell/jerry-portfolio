@@ -365,46 +365,52 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section
-        id="contact"
-        className="border-t border-white/5 bg-slate-900/40"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
-          <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 to-blue-500/5 p-8 sm:p-12 lg:p-16">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-              Contact
-            </p>
+<section id="contact" className="px-6 py-24">
+  <div className="mx-auto max-w-6xl">
+    <div className="rounded-3xl border border-slate-800 bg-slate-900/50 p-8 md:p-12">
+      <div className="max-w-2xl">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+          Contact
+        </p>
 
-            <h2 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
-              Let&apos;s build something useful.
-            </h2>
+        <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+          Let&apos;s build something together.
+        </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Whether it&apos;s a project, internship opportunity,
-              collaboration, or simply a conversation about technology,
-              I&apos;d be happy to connect.
-            </p>
+        <p className="mt-5 text-lg leading-8 text-slate-400">
+          I&apos;m open to internship opportunities, collaborations, freelance
+          projects, and conversations about technology.
+        </p>
 
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a
-                href="mailto:jerrywendo034@gmail.com"
-                className="rounded-full bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                jerrywendo034@gmail.com
-              </a>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="mailto:jerrywendo034@gmail.com"
+            className="rounded-full bg-cyan-500 px-7 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-400"
+          >
+            Email Me
+          </a>
 
-              <a
-                href="https://www.linkedin.com/in/jerry-wendo-28424b3a3"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
-              >
-                LinkedIn ↗
-              </a>
-            </div>
-          </div>
+          <a
+            href="https://www.linkedin.com/in/jerry-wendo-28424b3a3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="/Jerry-Wendo-CV.pdf"
+            download
+            className="rounded-full border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+          >
+            Download CV
+          </a>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="border-t border-white/5 bg-[#020617]">
