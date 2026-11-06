@@ -46,6 +46,15 @@ export default function Home() {
             <a href="#contact" className="transition hover:text-cyan-400">
               Contact
             </a>
+
+            <a
+            href="https://github.com/jerrywendo034-cell"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-cyan-400"
+            >
+            GitHub
+            </a>
           </div>
 
           <a
@@ -103,10 +112,19 @@ export default function Home() {
                 </a>
               </div>
 
+              <a
+               href="/Jerry-Wendo-CV.pdf"
+               download
+               className="mt-4 inline-flex items-center font-semibold text-slate-400 transition hover:text-cyan-400"
+              >
+              Download my CV →
+              </a>
+
               <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
                 <span>📍 Kenya</span>
                 <span>💻 Software Development</span>
                 <span>🤖 AI & Automation</span>
+                <span>🎯 Open to Internships</span>
               </div>
             </div>
 
@@ -284,85 +302,96 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects */}
-      <section
-        id="projects"
-        className="border-t border-white/5 bg-slate-950"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
+           {/* Projects */}
+          <section
+           id="projects"
+           className="border-t border-white/5 bg-slate-950"
+        >
+         <div className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-            Featured Project
-          </p>
+           Featured Project
+        </p>
 
-          <div className="mt-5 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
-            <div>
-              <p className="text-sm text-slate-500">01 / PROJECT</p>
+       <div className="mt-5 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+         <div>
+           <p className="text-sm text-slate-500">01 / PROJECT</p>
 
-              <h2 className="mt-3 text-5xl font-bold tracking-tight">
-                Whats AI
-              </h2>
+            <h2 className="mt-3 text-5xl font-bold tracking-tight">
+             Whats AI
+            </h2>
 
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                An AI-powered WhatsApp assistant designed to help businesses
-                communicate with customers, manage orders, support payments,
-                and provide faster customer service.
-              </p>
+        <p className="mt-6 text-lg leading-8 text-slate-300">
+          An AI-powered WhatsApp assistant designed to help businesses
+          communicate with customers, manage orders, support payments,
+          and provide faster customer service.
+        </p>
 
-              <div className="mt-7 flex flex-wrap gap-2">
-                {projects[0].technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="rounded-full border border-white/10 bg-slate-900 px-3 py-1.5 text-sm text-slate-300"
-                  >
-                    {technology}
-                  </span>
-                ))}
-              </div>
+        <div className="mt-7 flex flex-wrap gap-2">
+          {projects[0].technologies.map((technology) => (
+            <span
+              key={technology}
+              className="rounded-full border border-white/10 bg-slate-900 px-3 py-1.5 text-sm text-slate-300"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
 
-              <a
-                href={projects[0].link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center gap-2 font-semibold text-cyan-400 transition hover:gap-3 hover:text-cyan-300"
-              >
-                Visit project <span>→</span>
-              </a>
+        <div className="mt-8 flex flex-wrap gap-5">
+          <a
+            href={projects[0].link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-semibold text-cyan-400 transition hover:gap-3 hover:text-cyan-300"
+          >
+            Visit project <span>→</span>
+          </a>
+
+          <a
+            href="https://github.com/jerrywendo034-cell"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-semibold text-slate-300 transition hover:text-cyan-400"
+          >
+            View GitHub <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <div className="relative">
+        <div className="absolute -inset-4 rounded-3xl bg-cyan-400/5 blur-2xl" />
+
+        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 p-8">
+          <div className="flex items-center gap-2 border-b border-white/10 pb-5">
+            <span className="h-3 w-3 rounded-full bg-red-400/70" />
+            <span className="h-3 w-3 rounded-full bg-yellow-400/70" />
+            <span className="h-3 w-3 rounded-full bg-green-400/70" />
+
+            <span className="ml-3 text-xs text-slate-500">
+              whats-ai
+            </span>
+          </div>
+
+          <div className="py-10">
+            <div className="ml-auto max-w-xs rounded-2xl rounded-br-sm bg-cyan-400 p-4 text-sm font-medium text-slate-950">
+              Hi! I&apos;d like to order a product.
             </div>
 
-            <div className="relative">
-              <div className="absolute -inset-4 rounded-3xl bg-cyan-400/5 blur-2xl" />
+            <div className="mt-4 max-w-xs rounded-2xl rounded-bl-sm border border-white/10 bg-slate-800 p-4 text-sm leading-6 text-slate-300">
+              Absolutely. I can help you with that. What product would
+              you like to order?
+            </div>
 
-              <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 p-8">
-                <div className="flex items-center gap-2 border-b border-white/10 pb-5">
-                  <span className="h-3 w-3 rounded-full bg-red-400/70" />
-                  <span className="h-3 w-3 rounded-full bg-yellow-400/70" />
-                  <span className="h-3 w-3 rounded-full bg-green-400/70" />
-
-                  <span className="ml-3 text-xs text-slate-500">
-                    whats-ai
-                  </span>
-                </div>
-
-                <div className="py-10">
-                  <div className="ml-auto max-w-xs rounded-2xl rounded-br-sm bg-cyan-400 p-4 text-sm font-medium text-slate-950">
-                    Hi! I&apos;d like to order a product.
-                  </div>
-
-                  <div className="mt-4 max-w-xs rounded-2xl rounded-bl-sm border border-white/10 bg-slate-800 p-4 text-sm leading-6 text-slate-300">
-                    Absolutely. I can help you with that. What product would
-                    you like to order?
-                  </div>
-
-                  <div className="mt-8 flex items-center gap-3 text-xs text-slate-500">
-                    <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
-                    AI assistant online
-                  </div>
-                </div>
-              </div>
+            <div className="mt-8 flex items-center gap-3 text-xs text-slate-500">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
+              AI assistant online
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Contact */}
 <section id="contact" className="px-6 py-24">
@@ -397,6 +426,16 @@ export default function Home() {
             className="rounded-full border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
           >
             LinkedIn
+            </a>
+
+            <a
+            href="https://github.com/jerrywendo034-cell"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+          >     
+            GitHub
+
           </a>
 
           <a
